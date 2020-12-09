@@ -74,7 +74,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <progressView opaque="NO" contentMode="scaleAspectFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="dAV-oT-xlA">
-                                                                        <rect key="frame" x="0.0" y="31.5" width="84" height="31.5"/>
+                                                                        <rect key="frame" x="16" y="31.5" width="52" height="31.5"/>
                                                                         <color key="progressTintColor" systemColor="systemPurpleColor"/>
                                                                     </progressView>
                                                                 </subviews>
@@ -305,10 +305,6 @@
                     <connections>
                         <outlet property="actionPointsBar" destination="gkd-iY-c0Y" id="x1C-pa-LDe"/>
                         <outlet property="actualActionPoints" destination="011-8J-a26" id="hXZ-VZ-4KG"/>
-                        <outlet property="button1" destination="6Cv-UV-HC3" id="NaY-Aj-B8Q"/>
-                        <outlet property="button2" destination="J3g-xJ-auI" id="GTN-M8-hTe"/>
-                        <outlet property="button3" destination="0qt-Y9-Ftd" id="PF3-gj-ifg"/>
-                        <outlet property="button4" destination="SNH-6a-l6d" id="8q4-1a-00F"/>
                         <outlet property="currentStatusBar" destination="zNI-o1-OB5" id="9Bp-dw-cJD"/>
                         <outlet property="dayCounter" destination="zim-0V-OKH" id="wSL-T9-aT8"/>
                         <outlet property="foodStatus" destination="tlp-rh-aD3" id="wFy-dT-IWP"/>
@@ -320,6 +316,10 @@
                         <outlet property="purchaseButton" destination="ZdD-pa-sgo" id="R0m-5r-oI5"/>
                         <outlet property="restartButton" destination="61X-wv-n9Q" id="M3e-MR-OX0"/>
                         <outlet property="sleepButton" destination="mbH-5S-HNt" id="dUV-RM-8LN"/>
+                        <outlet property="specialAction1" destination="6Cv-UV-HC3" id="NaY-Aj-B8Q"/>
+                        <outlet property="specialAction2" destination="J3g-xJ-auI" id="GTN-M8-hTe"/>
+                        <outlet property="specialAction3" destination="0qt-Y9-Ftd" id="PF3-gj-ifg"/>
+                        <outlet property="specialAction4" destination="SNH-6a-l6d" id="8q4-1a-00F"/>
                         <outlet property="textButton" destination="J0U-BW-mPo" id="gD7-g5-jEc"/>
                         <outlet property="thirstBar" destination="ROE-G7-R6q" id="W7o-b8-v2U"/>
                         <outlet property="walkButton" destination="2Sf-D8-6Yz" id="l8X-8m-dPn"/>

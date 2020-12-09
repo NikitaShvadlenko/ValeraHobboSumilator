@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Dictionary {
+struct StatusBarTitle {
     var hunger: String
     var thirst: String
     var street: String
