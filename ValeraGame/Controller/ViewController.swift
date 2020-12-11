@@ -10,6 +10,10 @@ import UIKit
 class ViewController: UIViewController {
     var valeraBrain = ValeraBrain ()
     
+    @IBOutlet weak var healthLabel: UILabel!
+    @IBOutlet weak var thirstLabel: UILabel!
+    @IBOutlet weak var hungerLabel: UILabel!
+    @IBOutlet weak var moneyLabel: UILabel!
     @IBOutlet weak var guitarStatus: UILabel!
     @IBOutlet weak var healStatus: UILabel!
     @IBOutlet weak var foodStatus: UILabel!
@@ -45,6 +49,7 @@ class ViewController: UIViewController {
         houseStatus.alpha = 0
         healStatus.alpha = 0
         foodStatus.alpha = 0
+        guitarStatus.alpha = 0
         specialAction1.setTitle(valeraBrain.goToAction[0], for: .normal)
         specialAction2.setTitle(valeraBrain.goToAction[1], for: .normal)
         specialAction3.setTitle(valeraBrain.goToAction[2], for: .normal)
@@ -63,6 +68,7 @@ class ViewController: UIViewController {
         houseStatus.alpha = 0
         healStatus.alpha = 0
         foodStatus.alpha = 0
+        guitarStatus.alpha = 0
         specialAction1.setTitle(valeraBrain.textToAction[0], for: .normal)
         specialAction2.setTitle(valeraBrain.textToAction[1], for: .normal)
         specialAction3.setTitle(valeraBrain.textToAction[2], for: .normal)
@@ -90,6 +96,7 @@ class ViewController: UIViewController {
         houseStatus.text = valeraBrain.houseStatusText
         foodStatus.text = valeraBrain.foodStatusText
         healStatus.text = valeraBrain.healStatusText
+        guitarStatus.text = valeraBrain.guitarStatusText
     }
     @IBAction func updateTitle1(_ sender: UIButton) {
         if sender.currentTitle == valeraBrain.goToAction[1] {
@@ -165,7 +172,12 @@ class ViewController: UIViewController {
             moneyBar.alpha = 1
             actionPointsBar.alpha = 1
             dayCounter.alpha = 1
-            makeButtonsFunction()
+            actualActionPoints.alpha = 1
+            moneyLabel.alpha = 1
+            hungerLabel.alpha = 1
+            thirstLabel.alpha = 1
+            healthLabel.alpha = 1
+
         }
     }
     
@@ -200,10 +212,6 @@ class ViewController: UIViewController {
         specialAction4.setTitle(valeraBrain.loadingButtons, for: .normal)
     }
     func makeInterfaceDisappear() {
-        sleepButton.isUserInteractionEnabled = false
-        walkButton.isUserInteractionEnabled = false
-        textButton.isUserInteractionEnabled = false
-        purchaseButton.isUserInteractionEnabled = false
         restartButton.alpha = 1
         sleepButton.alpha = 0
         purchaseButton.alpha = 0
@@ -215,6 +223,11 @@ class ViewController: UIViewController {
         moneyBar.alpha = 0
         actionPointsBar.alpha = 0
         dayCounter.alpha = 0
+        actualActionPoints.alpha = 0
+        moneyLabel.alpha = 0
+        hungerLabel.alpha = 0
+        thirstLabel.alpha = 0
+        healthLabel.alpha = 0
     }
     
     func endScreen () {
@@ -222,14 +235,13 @@ class ViewController: UIViewController {
         makeInterfaceDisappear()
         restartButton.setTitle(valeraBrain.restartButton, for: .normal)
         restartButton.alpha = 1
-        currentStatusBar.text = valeraBrain.deathDeclaration
+        if valeraBrain.houseBalance > 0 {
+        currentStatusBar.text = valeraBrain.deathDeclaration[0]
     }
-    func makeButtonsFunction() {
-        sleepButton.isUserInteractionEnabled = true
-        walkButton.isUserInteractionEnabled = true
-        textButton.isUserInteractionEnabled = true
-        purchaseButton.isUserInteractionEnabled = true
-    }
+        else {
+            currentStatusBar.text = valeraBrain.deathDeclaration[1]
+        }
+}
 }
 
 

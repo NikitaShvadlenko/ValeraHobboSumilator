@@ -40,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		B466490D25829287006E535F /* Untitled design-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Untitled design-5.png"; path = "../../../Downloads/Untitled design-5.png"; sourceTree = "<group>"; };
+		B466491525841056006E535F /* Валера Жизнь Тяжёлая Сука.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Валера Жизнь Тяжёлая Сука.jpg"; sourceTree = "<group>"; };
 		B4B98F712578786D000513A8 /* ValeraGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ValeraGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4B98F742578786D000513A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4B98F762578786D000513A8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,7 +115,6 @@
 				B466490D25829287006E535F /* Untitled design-5.png */,
 				B4B98FA925793CD7000513A8 /* Controller */,
 				B4B98FA825793CBD000513A8 /* Veiw */,
-				B4B98F7F25787872000513A8 /* LaunchScreen.storyboard */,
 				B4F64073258144C800FD3136 /* Валера Жизнь Тяжёлая Сука.jpg */,
 				B4B98F8225787872000513A8 /* Info.plist */,
 			);
@@ -151,6 +151,8 @@
 		B4B98FA825793CBD000513A8 /* Veiw */ = {
 			isa = PBXGroup;
 			children = (
+				B466491525841056006E535F /* Валера Жизнь Тяжёлая Сука.jpg */,
+				B4B98F7F25787872000513A8 /* LaunchScreen.storyboard */,
 				B4B98F7A2578786D000513A8 /* Main.storyboard */,
 			);
 			path = Veiw;

@@ -38,7 +38,7 @@
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="SRD-62-qdO">
                                                                 <rect key="frame" x="0.0" y="0.0" width="139" height="32.5"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Здоровье" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BQK-tc-RJj">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Здоровье" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="BQK-tc-RJj">
                                                                         <rect key="frame" x="0.0" y="0.0" width="139" height="20.5"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <nil key="textColor"/>
@@ -53,7 +53,7 @@
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="don-Jg-ZBm">
                                                                 <rect key="frame" x="189" y="0.0" width="139.5" height="32.5"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Напитость" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hch-Hm-6eB">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Напитость" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="hch-Hm-6eB">
                                                                         <rect key="frame" x="0.0" y="0.0" width="139.5" height="20.5"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <nil key="textColor"/>
@@ -83,7 +83,7 @@
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="ljJ-ZG-0rh">
                                                                 <rect key="frame" x="567.5" y="0.0" width="139.5" height="43"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Валерики" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P5S-J1-Add">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Валерики" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="P5S-J1-Add">
                                                                         <rect key="frame" x="31" y="0.0" width="77.5" height="20.5"/>
                                                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                                                         <nil key="textColor"/>
@@ -290,13 +290,13 @@
                                                     <action selector="restartButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u5e-K4-VLe"/>
                                                 </connections>
                                             </button>
-                                            <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="azQ-cK-7Zn">
-                                                <rect key="frame" x="0.0" y="20" width="896" height="44"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="azQ-cK-7Zn">
+                                                <rect key="frame" x="0.0" y="20" width="896" height="40"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Sf-D8-6Yz">
-                                                        <rect key="frame" x="0.0" y="0.0" width="218" height="44"/>
+                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Sf-D8-6Yz">
+                                                        <rect key="frame" x="0.0" y="0.0" width="218" height="40"/>
                                                         <color key="backgroundColor" red="0.1215686275" green="0.23529411759999999" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                                         <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" title="СХОДИТЬ">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -310,9 +310,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mbH-5S-HNt">
-                                                        <rect key="frame" x="226" y="0.0" width="218" height="44"/>
+                                                        <rect key="frame" x="226" y="0.0" width="218" height="40"/>
                                                         <color key="backgroundColor" red="0.1215686275" green="0.23529411759999999" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                                         <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" title="ПОСПАТЬ">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -326,25 +326,23 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J0U-BW-mPo">
-                                                        <rect key="frame" x="452" y="0.0" width="218" height="44"/>
+                                                        <rect key="frame" x="452" y="0.0" width="218" height="40"/>
                                                         <color key="backgroundColor" red="0.1215686275" green="0.23529411759999999" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                                         <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" title="НАПИСАТЬ">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font">
-                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                            </preferredSymbolConfiguration>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="17"/>
                                                         </state>
                                                         <connections>
                                                             <action selector="textAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eVk-0q-xY3"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZdD-pa-sgo">
-                                                        <rect key="frame" x="678" y="0.0" width="218" height="44"/>
+                                                        <rect key="frame" x="678" y="0.0" width="218" height="40"/>
                                                         <color key="backgroundColor" red="0.1215686275" green="0.23529411759999999" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                                         <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" title="КУПИТЬ">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -422,9 +420,12 @@
                         <outlet property="guitarStatus" destination="m2c-Ta-RqF" id="QuK-sp-6Jx"/>
                         <outlet property="healStatus" destination="enl-rr-Tqi" id="C3o-1C-N7c"/>
                         <outlet property="healthBar" destination="D3W-YB-H9f" id="Fff-qg-79w"/>
+                        <outlet property="healthLabel" destination="BQK-tc-RJj" id="0pN-d2-ni3"/>
                         <outlet property="houseStatus" destination="mBF-2r-DjZ" id="yRw-7Q-fQp"/>
                         <outlet property="hungerBar" destination="dAV-oT-xlA" id="8ot-C0-ufo"/>
+                        <outlet property="hungerLabel" destination="sQe-H0-Rdb" id="kcj-BM-skW"/>
                         <outlet property="moneyBar" destination="A19-mG-Ujh" id="paq-DV-Jbv"/>
+                        <outlet property="moneyLabel" destination="P5S-J1-Add" id="FH7-vC-7pc"/>
                         <outlet property="purchaseButton" destination="ZdD-pa-sgo" id="R0m-5r-oI5"/>
                         <outlet property="restartButton" destination="61X-wv-n9Q" id="M3e-MR-OX0"/>
                         <outlet property="sleepButton" destination="mbH-5S-HNt" id="dUV-RM-8LN"/>
@@ -434,6 +435,7 @@
                         <outlet property="specialAction4" destination="SNH-6a-l6d" id="8q4-1a-00F"/>
                         <outlet property="textButton" destination="J0U-BW-mPo" id="gD7-g5-jEc"/>
                         <outlet property="thirstBar" destination="ROE-G7-R6q" id="W7o-b8-v2U"/>
+                        <outlet property="thirstLabel" destination="hch-Hm-6eB" id="8hk-dY-iq0"/>
                         <outlet property="walkButton" destination="2Sf-D8-6Yz" id="l8X-8m-dPn"/>
                     </connections>
                 </viewController>

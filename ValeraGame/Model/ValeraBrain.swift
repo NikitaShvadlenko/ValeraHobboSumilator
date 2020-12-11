@@ -18,7 +18,7 @@ import Foundation
         var pickLine = 0
         var loadingButtons = "Загрузка..."
         var restartButton = "Рестарт"
-        var deathDeclaration = "Вы безуспешны в этом деле, начните новую игру и следите за статами"
+        var deathDeclaration = ["Вы безуспешны в этом деле, начните новую игру и следите за статами", "Вы не оплатили хату, вас выперли на улицу, теперь вы официально бомж."]
         var hasGuitar = false
         var houseBalance = 7
         var foodBalance = 2
@@ -30,6 +30,7 @@ import Foundation
         var houseStatusText = "Загрузка"
         var foodStatusText = "Загрузка"
         var healStatusText = "Загрузка"
+        var guitarStatusText = "Купить"
         // Словарь хорош для позитивных и негативных исходов - просто словарь сам по себе не имеет смысла.Это можно переделать и включить все переменные. Также: словарь с рандомными стрингс лучше иметь только в случае полного готового дизайна игры и кнопок.
         let randomLines = [
             StatusBarTitle(hunger: "Вы успешно поели", thirst: "Кажется, вы изобрели новый попить", street: "Вы ужасно играете, за ваши старания вам накинули ", sleep: "Утренний стояк не дает вам покоя"),
@@ -54,16 +55,17 @@ import Foundation
         let purchaseAction = ["Гитару 200В", "Оплатить Хату 200В", "Еды 55В", "Лечение 55В"]
         
         // Все, кроме гитары заменить на рандомные строки, раз уж начал. Вы купили гитару должно измениться на "Вы купили гитару попизже" при hasGuitar = true
-        let guitarPurchase = "Вы купили гитару"
+        let guitarPurchase = ["Вы купили гитару", "Вы купили ещё одну гитару. Зачем? Прошло не так много времени."]
         let housePurchase = "Вы оплатили хату на семь дней"
         let foodPurchase = "Вы купили 5 единиц того, что было по акции"
         let healPurchase = "Вы купили какие-то таблетки"
         let returnNoFood = "Ваше хранилище пусто"
         let returnNoMoney = "У вас нет денег"
         let returnNoHeal = "У вас нет полечиться"
+        let hasNoguitar = ["Вы начали странно петь","Вы весь день шутили странные шутки", "Прохожие не оценили ваши прошения милостыни", "Вы знатно забитбоксили", "Вы показали, как стоит цапля", "Не имея гитары, вы воспользовались другим инструментом"]
         //Проверка, живой ли + кнопка рестарта игры
         var isAlive: Bool {
-            return hunger > 0 && thirst > 0 && health > 0 && houseBalance > 0
+            return hunger > 0 && thirst > 0 && health > 0 && houseBalance >= 0
         }
         mutating func randomLine() {
             pickLine = Int.random (in: 0...(randomLines.count - 1))
@@ -95,7 +97,6 @@ import Foundation
         // Смена дней также должна влиять на оплату хату не оплатил хату в последний день - поспал - проиграл
         mutating func returnSleep () {
             
-            if houseBalance > 0 {
                 if isAlive {
             actionPoints = 4
             oneActionComplete()
@@ -103,10 +104,6 @@ import Foundation
             currentStatus = randomLines[pickLine].sleep
             dayCount += 1
             houseBalance -= 1
-            }
-            }
-            else {
-                deathDeclaration = "Вы не оплатили хату, вас выперли на улицу, теперь вы официально бомж."
             }
         }
         // Четыре стандартных действия
@@ -117,11 +114,15 @@ import Foundation
                 if actionPoints > 0 {
                     oneActionComplete()
                     if !hasGuitar {
-                        gotMoney = Int.random(in: 10...50)}
-                    else {gotMoney = Int.random(in: 50...85)}
+                        gotMoney = Int.random(in: 10...50)
+                        currentStatus = hasNoguitar [Int.random(in: 0...(hasNoguitar.count-1))]
+                    }
+                    else {gotMoney = Int.random(in: 70...125)
+                        randomLine()
+                        currentStatus = "\(randomLines[pickLine].street) \(gotMoney) В"
+                    }
                     money += gotMoney
-                    randomLine()
-                    currentStatus = "\(randomLines[pickLine].street) \(gotMoney) В"
+                    
                 }
                 else {
                 noActionsReturn()
@@ -228,10 +229,15 @@ import Foundation
         // четыре действия покупки
         mutating func purchaseGuitar (){
             if money > guitarPrice {
-            oneActionComplete()
-            money -= guitarPrice
+                oneActionComplete()
+                money -= guitarPrice
+                if !hasGuitar{
             hasGuitar = true
-            currentStatus = guitarPurchase
+            currentStatus = guitarPurchase[0]
+            }
+                else {
+                    currentStatus = guitarPurchase[1]
+                }
             }
             else {currentStatus = returnNoMoney}
         }
@@ -270,6 +276,12 @@ import Foundation
             houseStatusText = "Оплачено на \(houseBalance) д."
             foodStatusText = "Имеется \(foodBalance)"
             healStatusText = "Имеется \(healBalance)"
+            if hasGuitar {
+                guitarStatusText = "Приобретено"
+            }
+            else {
+                guitarStatusText = "Купить"
+            }
         }
     }
 
