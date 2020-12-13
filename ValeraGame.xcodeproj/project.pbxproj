@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B466490E25829287006E535F /* Untitled design-5.png in Resources */ = {isa = PBXBuildFile; fileRef = B466490D25829287006E535F /* Untitled design-5.png */; };
+		B466494425857E4D006E535F /* QuestLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B466494325857E4D006E535F /* QuestLine.swift */; };
+		B466494C25857F3B006E535F /* HobboQuest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B466494B25857F3B006E535F /* HobboQuest.swift */; };
 		B4B98F752578786D000513A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B98F742578786D000513A8 /* AppDelegate.swift */; };
 		B4B98F772578786D000513A8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B98F762578786D000513A8 /* SceneDelegate.swift */; };
 		B4B98F792578786D000513A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B98F782578786D000513A8 /* ViewController.swift */; };
@@ -41,6 +43,8 @@
 /* Begin PBXFileReference section */
 		B466490D25829287006E535F /* Untitled design-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Untitled design-5.png"; path = "../../../Downloads/Untitled design-5.png"; sourceTree = "<group>"; };
 		B466491525841056006E535F /* Валера Жизнь Тяжёлая Сука.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Валера Жизнь Тяжёлая Сука.jpg"; sourceTree = "<group>"; };
+		B466494325857E4D006E535F /* QuestLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestLine.swift; sourceTree = "<group>"; };
+		B466494B25857F3B006E535F /* HobboQuest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HobboQuest.swift; path = ../../../../.Trash/HobboQuest.swift; sourceTree = "<group>"; };
 		B4B98F712578786D000513A8 /* ValeraGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ValeraGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4B98F742578786D000513A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4B98F762578786D000513A8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +148,8 @@
 			children = (
 				B4B98FB525793D30000513A8 /* StatusBarTitle.swift */,
 				B4B98FBA25793E0D000513A8 /* ValeraBrain.swift */,
+				B466494B25857F3B006E535F /* HobboQuest.swift */,
+				B466494325857E4D006E535F /* QuestLine.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -302,7 +308,9 @@
 				B4B98FB625793D30000513A8 /* StatusBarTitle.swift in Sources */,
 				B4B98F752578786D000513A8 /* AppDelegate.swift in Sources */,
 				B4B98F772578786D000513A8 /* SceneDelegate.swift in Sources */,
+				B466494425857E4D006E535F /* QuestLine.swift in Sources */,
 				B4B98FBB25793E0E000513A8 /* ValeraBrain.swift in Sources */,
+				B466494C25857F3B006E535F /* HobboQuest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
