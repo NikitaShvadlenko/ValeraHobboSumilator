@@ -187,7 +187,7 @@ class ViewController: UIViewController {
         if sender.currentTitle == valeraBrain.goToAction [3] {
             valeraBrain.returnStreet()
             if shouldQuestStart() {
-                questShouldStart -= 5
+                questShouldStart = 0
                 specialAction1.setTitle(hobboQuest.getChoice1Button(), for: .normal)
                 specialAction3.setTitle(hobboQuest.getChoice2Button(), for: .normal)
                 valeraBrain.currentStatus = hobboQuest.getQuestTitle()
@@ -304,7 +304,7 @@ class ViewController: UIViewController {
         hobboQuest.resetQuest()
     }
     func shouldQuestStart() -> Bool {
-        return (questShouldStart - valeraBrain.dayCount) > 0
+        return questShouldStart - 5 > -1
     }
     func updateQuestUi() {
         healthBar.progress = valeraBrain.health
