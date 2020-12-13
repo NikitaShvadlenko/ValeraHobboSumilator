@@ -64,6 +64,7 @@ class ViewController: UIViewController {
     }
     @IBAction func sleepAction(_ sender: UIButton) {
         valeraBrain.returnSleep()
+        questShouldStart += 1
         updateUI()
     }
     
@@ -236,7 +237,6 @@ class ViewController: UIViewController {
     }
     
     func updateUI() {
-        questShouldStart += 1
         houseStatus.alpha = 0
         healStatus.alpha = 0
         foodStatus.alpha = 0
@@ -291,20 +291,20 @@ class ViewController: UIViewController {
         makeInterfaceDisappear()
         restartButton.setTitle(valeraBrain.restartButton, for: .normal)
         restartButton.alpha = 1
-        if valeraBrain.houseBalance > 0 {
+        if valeraBrain.houseBalance > 0{
         currentStatusBar.text = valeraBrain.deathDeclaration[0]
         }
         if hobboQuest.thisIsTheEnd{
             currentStatusBar.text = hobboQuest.questEndMessage[hobboQuest.finalDestination]
         }
         
-        else {
+        else if valeraBrain.houseBalance < 0{
             currentStatusBar.text = valeraBrain.deathDeclaration[1]
         }
         hobboQuest.resetQuest()
     }
     func shouldQuestStart() -> Bool {
-        return questShouldStart - valeraBrain.dayCount > 0
+        return (questShouldStart - valeraBrain.dayCount) > 0
     }
     func updateQuestUi() {
         healthBar.progress = valeraBrain.health

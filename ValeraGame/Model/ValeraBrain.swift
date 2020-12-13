@@ -103,6 +103,7 @@ import Foundation
             randomLine ()
             currentStatus = randomLines[pickLine].sleep
             dayCount += 1
+            
             houseBalance -= 1
             }
         }
