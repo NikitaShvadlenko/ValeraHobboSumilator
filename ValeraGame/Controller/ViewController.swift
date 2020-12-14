@@ -304,7 +304,7 @@ class ViewController: UIViewController {
         hobboQuest.resetQuest()
     }
     func shouldQuestStart() -> Bool {
-        return questShouldStart - 5 > -1
+        return questShouldStart - 3 > -1
     }
     func updateQuestUi() {
         healthBar.progress = valeraBrain.health

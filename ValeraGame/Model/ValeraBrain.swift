@@ -84,10 +84,10 @@ import Foundation
         }
         //Вместо флоат намбер лучше целое число, сделано все так, чтобы не писать апдейт для барров - лучше поменять.
         mutating func oneActionComplete () {
-            hunger -= 0.2
-            thirst -= 0.2
+            hunger -= 0.15
+            thirst -= 0.15
             actionPoints -= 1
-            health -= 0.1
+            health -= 0.15
         }
         // есть ли вариант сократить проверку действий вместо IF Else в каждой функции?
         
@@ -137,7 +137,7 @@ import Foundation
                 foodBalance -= 1
                     if actionPoints > 0 {
                         oneActionComplete()
-                        hunger += 0.4
+                        hunger = 1
                         randomLine ()
                         currentStatus = randomLines[pickLine].hunger
                     }
@@ -153,7 +153,7 @@ import Foundation
             if isAlive {
                 if actionPoints > 0 {
                     oneActionComplete()
-                    thirst += 0.5
+                    thirst = 1
                     randomLine ()
                     currentStatus = randomLines[pickLine].thirst
                     }
@@ -168,7 +168,7 @@ import Foundation
                 if healBalance > 0 {
                     if actionPoints > 0 {
                     oneActionComplete()
-                    health += 0.4
+                    health = 1
                     currentStatus = healAction [Int .random(in: 0...(healAction.count - 1))]
                     }
                     else {
@@ -229,6 +229,7 @@ import Foundation
         }
         // четыре действия покупки
         mutating func purchaseGuitar (){
+            if actionPoints > 0 {
             if money > guitarPrice {
                 oneActionComplete()
                 money -= guitarPrice
@@ -242,27 +243,41 @@ import Foundation
             }
             else {currentStatus = returnNoMoney}
         }
-        mutating func purchaseFood (){
-            if money > foodPrice {
-            oneActionComplete()
-            money -= foodPrice
-            foodBalance += 5
-            currentStatus = foodPurchase
-            }
-            else {currentStatus = returnNoMoney
+            else {noActionsReturn()
             }
         }
+        mutating func purchaseFood (){
+                if actionPoints > 0 {
+                    if money > foodPrice {
+                        oneActionComplete()
+                        money -= foodPrice
+                        foodBalance += 5
+                        currentStatus = foodPurchase
+                    }
+                    else {currentStatus = returnNoMoney
+                    }
+                }
+                    else {noActionsReturn()
+                    }
+        }
         mutating func purchaseHouse (){
+            if actionPoints > 0 {
             if money > housePrice {
             oneActionComplete()
             money -= housePrice
             houseBalance += 7
             currentStatus = housePurchase
             }
-            else {currentStatus = returnNoMoney}
+            else {currentStatus = returnNoMoney
+                
+            }
         }
-        
+            else {noActionsReturn()
+                
+            }
+        }
         mutating func purchaseHealth (){
+            if actionPoints > 0 {
             if money > healPrice {
             oneActionComplete()
             money -= healPrice
@@ -272,6 +287,8 @@ import Foundation
             else {currentStatus = returnNoMoney
                 
             }
+            }
+            else {noActionsReturn()}
         }
         mutating func updateInventoryText(){
             houseStatusText = "Оплачено на \(houseBalance) д."
