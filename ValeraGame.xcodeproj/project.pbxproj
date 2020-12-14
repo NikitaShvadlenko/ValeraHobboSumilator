@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B466490E25829287006E535F /* Untitled design-5.png in Resources */ = {isa = PBXBuildFile; fileRef = B466490D25829287006E535F /* Untitled design-5.png */; };
+		B448171F2587946800F686AF /* Чиста тупа бит.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B448171E2587946800F686AF /* Чиста тупа бит.mp3 */; };
+		B448172725879B4000F686AF /* Мяу.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B4481723258798A300F686AF /* Мяу.m4a */; };
 		B466494425857E4D006E535F /* QuestLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B466494325857E4D006E535F /* QuestLine.swift */; };
 		B466494C25857F3B006E535F /* HobboQuest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B466494B25857F3B006E535F /* HobboQuest.swift */; };
+		B4B74A8E2587EBAA00AB6279 /* Snare.wav in Resources */ = {isa = PBXBuildFile; fileRef = B4B74A8D2587EBAA00AB6279 /* Snare.wav */; };
 		B4B98F752578786D000513A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B98F742578786D000513A8 /* AppDelegate.swift */; };
 		B4B98F772578786D000513A8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B98F762578786D000513A8 /* SceneDelegate.swift */; };
 		B4B98F792578786D000513A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B98F782578786D000513A8 /* ViewController.swift */; };
@@ -41,10 +43,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B466490D25829287006E535F /* Untitled design-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Untitled design-5.png"; path = "../../../Downloads/Untitled design-5.png"; sourceTree = "<group>"; };
+		B448171E2587946800F686AF /* Чиста тупа бит.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Чиста тупа бит.mp3"; sourceTree = "<group>"; };
+		B4481723258798A300F686AF /* Мяу.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Мяу.m4a"; sourceTree = "<group>"; };
 		B466491525841056006E535F /* Валера Жизнь Тяжёлая Сука.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Валера Жизнь Тяжёлая Сука.jpg"; sourceTree = "<group>"; };
 		B466494325857E4D006E535F /* QuestLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestLine.swift; sourceTree = "<group>"; };
 		B466494B25857F3B006E535F /* HobboQuest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HobboQuest.swift; path = ../../../../.Trash/HobboQuest.swift; sourceTree = "<group>"; };
+		B4B74A8D2587EBAA00AB6279 /* Snare.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Snare.wav; sourceTree = "<group>"; };
 		B4B98F712578786D000513A8 /* ValeraGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ValeraGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4B98F742578786D000513A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4B98F762578786D000513A8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +93,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B448171D2587939800F686AF /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				B448171E2587946800F686AF /* Чиста тупа бит.mp3 */,
+				B4B74A8D2587EBAA00AB6279 /* Snare.wav */,
+				B4481723258798A300F686AF /* Мяу.m4a */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 		B4B98F682578786D000513A8 = {
 			isa = PBXGroup;
 			children = (
@@ -114,9 +128,9 @@
 			children = (
 				B4B98F742578786D000513A8 /* AppDelegate.swift */,
 				B4B98F762578786D000513A8 /* SceneDelegate.swift */,
+				B448171D2587939800F686AF /* Sounds */,
 				B4B98FA725793CAE000513A8 /* Model */,
 				B4B98F7D25787872000513A8 /* Assets.xcassets */,
-				B466490D25829287006E535F /* Untitled design-5.png */,
 				B4B98FA925793CD7000513A8 /* Controller */,
 				B4B98FA825793CBD000513A8 /* Veiw */,
 				B4F64073258144C800FD3136 /* Валера Жизнь Тяжёлая Сука.jpg */,
@@ -275,11 +289,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B448171F2587946800F686AF /* Чиста тупа бит.mp3 in Resources */,
+				B4B74A8E2587EBAA00AB6279 /* Snare.wav in Resources */,
 				B4B98F8125787872000513A8 /* LaunchScreen.storyboard in Resources */,
 				B4F64074258144C900FD3136 /* Валера Жизнь Тяжёлая Сука.jpg in Resources */,
+				B448172725879B4000F686AF /* Мяу.m4a in Resources */,
 				B4B98F7E25787872000513A8 /* Assets.xcassets in Resources */,
 				B4B98F7C2578786D000513A8 /* Main.storyboard in Resources */,
-				B466490E25829287006E535F /* Untitled design-5.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

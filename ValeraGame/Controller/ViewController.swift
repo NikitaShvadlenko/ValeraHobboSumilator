@@ -6,13 +6,16 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
     
     var questShouldStart = 0
     var hobboQuest = HobboQuest()
     var valeraBrain = ValeraBrain ()
-    
+    var beat = "Чиста тупа бит"
+    var player: AVAudioPlayer!
+    var secondPlayer: AVAudioPlayer!
     @IBOutlet weak var healthLabel: UILabel!
     @IBOutlet weak var thirstLabel: UILabel!
     @IBOutlet weak var hungerLabel: UILabel!
@@ -33,6 +36,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         updateUI()
     }
 // Stats
@@ -237,6 +241,7 @@ class ViewController: UIViewController {
     }
     
     func updateUI() {
+        playSound(soundName: "Snare", repeats: false, extens: "wav")
         houseStatus.alpha = 0
         healStatus.alpha = 0
         foodStatus.alpha = 0
@@ -336,6 +341,17 @@ class ViewController: UIViewController {
         walkButton.alpha = 1
         makeButtonsDisappear()
     }
+    func playSound(soundName: String, repeats: Bool, extens: String) {
+    let url = Bundle.main.url(forResource: soundName, withExtension: extens)
+        player = try! AVAudioPlayer(contentsOf: url!)
+        player.volume = 0.5
+        if repeats {
+            player.numberOfLoops = -1
+        }
+    
+        player.play()
+}
+
 }
 
 
