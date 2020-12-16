@@ -47,7 +47,7 @@
 		B4481723258798A300F686AF /* Мяу.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Мяу.m4a"; sourceTree = "<group>"; };
 		B466491525841056006E535F /* Валера Жизнь Тяжёлая Сука.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Валера Жизнь Тяжёлая Сука.jpg"; sourceTree = "<group>"; };
 		B466494325857E4D006E535F /* QuestLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestLine.swift; sourceTree = "<group>"; };
-		B466494B25857F3B006E535F /* HobboQuest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HobboQuest.swift; path = ../../../../.Trash/HobboQuest.swift; sourceTree = "<group>"; };
+		B466494B25857F3B006E535F /* HobboQuest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HobboQuest.swift; sourceTree = "<group>"; };
 		B4B74A8D2587EBAA00AB6279 /* Snare.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Snare.wav; sourceTree = "<group>"; };
 		B4B98F712578786D000513A8 /* ValeraGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ValeraGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4B98F742578786D000513A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -65,7 +65,7 @@
 		B4B98F9825787873000513A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4B98FB525793D30000513A8 /* StatusBarTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarTitle.swift; sourceTree = "<group>"; };
 		B4B98FBA25793E0D000513A8 /* ValeraBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValeraBrain.swift; sourceTree = "<group>"; };
-		B4F64073258144C800FD3136 /* Валера Жизнь Тяжёлая Сука.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Валера Жизнь Тяжёлая Сука.jpg"; path = "../../../Desktop/Documents/Xcode/ValeraGame/Assets.xcassets/Валера Жизнь Тяжёлая Сука.jpg"; sourceTree = "<group>"; };
+		B4F64073258144C800FD3136 /* Валера Жизнь Тяжёлая Сука.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Валера Жизнь Тяжёлая Сука.jpg"; path = "Veiw/Валера Жизнь Тяжёлая Сука.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
